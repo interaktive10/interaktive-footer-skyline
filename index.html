@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interaktive — Footer Skyline</title>
+  <meta name="description" content="Outcome-based product content for brands. Interaktive footer with a real-time architectural skyline." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <main class="preview-page">
+    <section class="intro-band" aria-hidden="true">
+      <p>Interaktive · Footer study</p>
+    </section>
+
+    <footer class="site-footer" id="site-footer">
+      <div class="footer-copy">
+        <div class="footer-grid">
+          <div class="brand-col">
+            <h2 class="wordmark">INTERAKTIVE</h2>
+            <p class="tagline">
+              Outcome-based product content for brands —<br />
+              packs you can reorder, with expert judgement<br />
+              in the loop.
+            </p>
+            <div class="rule" aria-hidden="true"><span class="diamond"></span></div>
+            <p class="copyright">© 2026 INTERAKTIVE. ALL RIGHTS RESERVED.</p>
+          </div>
+
+          <nav class="nav-col" aria-label="Studio">
+            <h3><span class="diamond"></span> Studio</h3>
+            <ul>
+              <li><a href="#use-cases">Use cases</a></li>
+              <li><a href="#process">Process</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </nav>
+
+          <nav class="nav-col" aria-label="Services">
+            <h3><span class="diamond"></span> Services</h3>
+            <ul>
+              <li><a href="#content-packs">Content packs</a></li>
+              <li><a href="#why">Why Interaktive</a></li>
+              <li><a href="#consumer">Consumer catalogues</a></li>
+              <li><a href="#industrial">Industrial catalogues</a></li>
+              <li><a href="#interactive">Interactive &amp; 3D</a></li>
+              <li><a href="#catalogue">Catalogue System</a></li>
+            </ul>
+          </nav>
+
+          <nav class="nav-col" aria-label="Legal">
+            <h3><span class="diamond"></span> Legal</h3>
+            <ul>
+              <li><a href="#privacy">Privacy</a></li>
+              <li><a href="#terms">Terms</a></li>
+            </ul>
+          </nav>
+
+          <div class="cta-col">
+            <a class="cta-btn" href="mailto:hello@interaktive.io">
+              Discuss a project
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="email" href="mailto:hello@interaktive.io">hello@interaktive.io</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="skyline-stage" id="skyline-stage">
+        <canvas id="skyline-canvas"></canvas>
+      </div>
+    </footer>
+  </main>
+
+  <script type="module" src="./js/skyline.js"></script>
+</body>
+</html>
